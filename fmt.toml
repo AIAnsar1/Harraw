@@ -1,0 +1,5 @@
+edition = "2025"
+max_width = 120
+reorder_imports = true
+struct_lit_width = 60
+struct_variant_width = 60
