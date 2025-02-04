@@ -7,11 +7,7 @@ pub mod request;
 use async_trait::async_trait;
 use yaml_rust::Yaml;
 
-use self::assert::HarrawAssert;
-use self::assign::HarrawAssign;
-use self::delay::HarrawDelay;
-use self::exec::HarrawExec;
-use self::request::HarrawRequest;
+
 
 use crate::benchmark::{Context, Pool, Reports};
 use crate::config::HarrawConfig;

@@ -160,7 +160,7 @@ mod tests {
     #[test]
     fn hrw_interpolates_environment_variables() {
         std::env::set_var("FOO", "BAR");
-        let mut context: Context = Context::new();
+        let context: Context = Context::new();
         let interpolator = HarrawInterpolator::new(&context);
         let url = String::from("http://example.com/postalcode/{{ FOO }}");
         let interpolated = interpolator.hrw_resolve(&url, false);
